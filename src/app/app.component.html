@@ -1,0 +1,111 @@
+<div class='container' fxLayout="row" fxLayoutAlign="space-around center">
+    <div class='tower' *ngFor="let item of items; let i = index" fxLayout="column" fxLayoutAlign="space-around center">
+        <div class='title'> {{item.title}} </div>
+        <div class='value'> {{(item.value < 0) ? 0 : item.value}}% </div>
+        <div [class]='(item.value > 0 && item.value <= 100) ? "mass-line green" : "mass-line red"'> </div>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="155" height="500">
+            <style>
+            .st1182 {
+                fill: #cbcbcb
+            }
+            </style>
+            <g>
+                //short line
+                <line x1="54.5" x2="101.6" y1="2.6" y2="2.6" fill="none" stroke="#8b959f" stroke-miterlimit="22.9256" stroke-width="4" />
+
+                //top line
+                <rect width="154.6" height="4.3" x="0.7" y="6.9" class="st1182" />
+
+                <g>//1st grey rect
+                    <defs>
+                        <rect id="SVGID_1457_" width="137.3" height="91.9" x="9.4" y="14" />
+                    </defs>
+                    <clipPath id="SVGID_5_">
+                        <use overflow="visible" xlink:href="#SVGID_1457_" />
+                    </clipPath>
+                    <linearGradient id="SVGID_6_" x1="12.7258" x2="146.688" y1="59.9563" y2="59.947" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#616166" />
+                        <stop offset=".21" stop-color="#9b9b9b" />
+                        <stop offset="1" stop-color="#48484f" />
+                    </linearGradient>
+                    <rect width="137.3" height="91.9" x="9.4" y="14" fill="url(#SVGID_6_)" clip-path="url(#SVGID_5_)" />
+                </g>
+
+                //2nd line
+                <rect width="154.6" height="4.3" x="0.7" y="108.3" class="st1182" />
+
+                <g>//2nd grey rect
+                    <defs>
+                        <rect id="SVGID_1460_" width="137.3" height="91.9" x="9.4" y="115.5" />
+                    </defs>
+                    <clipPath id="SVGID_23_">
+                        <use overflow="visible" xlink:href="#SVGID_1460_" />
+                    </clipPath>
+                    <linearGradient id="SVGID_24_" x1="12.7258" x2="146.688" y1="161.4002" y2="161.4002" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#616166" />
+                        <stop offset=".21" stop-color="#9b9b9b" />
+                        <stop offset="1" stop-color="#48484f" />
+                    </linearGradient>
+                    <rect width="137.3" height="91.9" x="9.4" y="115.5" fill="url(#SVGID_24_)" clip-path="url(#SVGID_23_)" />
+                </g>
+
+                //3rd line
+                <rect width="154.6" height="4.3" x="0.7" y="209.8" class="st1182" />
+
+                <g> //3rd grey rect
+                    <defs>
+                        <rect id="SVGID_1463_" width="137.3" height="91.9" x="9.4" y="216.9" />
+                    </defs>
+                    <clipPath id="SVGID_25_">
+                        <use overflow="visible" xlink:href="#SVGID_1463_" />
+                    </clipPath>
+                    <linearGradient id="SVGID_26_" x1="12.7258" x2="146.688" y1="262.8487" y2="262.8487" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#616166" />
+                        <stop offset=".21" stop-color="#9b9b9b" />
+                        <stop offset="1" stop-color="#48484f" />
+                    </linearGradient>
+                    <rect width="137.3" height="91.9" x="9.4" y="216.9" fill="url(#SVGID_26_)" clip-path="url(#SVGID_25_)" />
+                </g>
+
+                //4th line
+                <rect width="154.6" height="4.3" x="0.7" y="311.2" class="st1182" />
+
+                <g> //4th grey rect
+                    <defs>
+                        <rect id="SVGID_1466_" width="137.3" height="91.9" x="9.4" y="318.4" />
+                    </defs>
+                    <clipPath id="SVGID_27_">
+                        <use overflow="visible" xlink:href="#SVGID_1466_" />
+                    </clipPath>
+                    <linearGradient id="SVGID_28_" x1="12.7258" x2="146.688" y1="364.2972" y2="364.2972" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#616166" />
+                        <stop offset=".21" stop-color="#9b9b9b" />
+                        <stop offset="1" stop-color="#48484f" />
+                    </linearGradient>
+                    <rect width="137.3" height="91.9" x="9.4" y="318.4" fill="url(#SVGID_28_)" clip-path="url(#SVGID_27_)" />
+                </g>
+
+                //bottom line
+                <rect width="154.6" height="4.3" x="0.7" y="412.7" class="st1182" />
+                
+                <g>//bottom triangle
+                  <linearGradient id="SVGID_29_" x1="9.3814" x2="146.6904" y1="459.1038" y2="459.1038" gradientUnits="userSpaceOnUse">
+                      <stop offset="0" stop-color="#616166" />
+                      <stop offset=".21" stop-color="#9b9b9b" />
+                      <stop offset="1" stop-color="#48484f" />
+                  </linearGradient>
+                  <polygon fill="url(#SVGID_29_)" points="69.3,496.4 9.4,419.8 146.7,419.8 86.7,496.4" />
+                </g>
+
+                //liquid level
+                <rect width="118.5" [attr.height]="(item.value > 100) ? 396 : (item.value < 0)? 0 : item.value*3.96" x="19.6" [attr.y]="410 - ((item.value > 100) ? 396 : item.value*3.96)" fill="#21b249" fill-rule="evenodd" clip-rule="evenodd" opacity=".5" />
+
+                //green empty rect
+                <path fill="none" stroke="#21b149" stroke-miterlimit="10" stroke-width="3" d="M76.7 479.1h-50.5c-5.5 0-10-4.5-10-10v-23.9c0-5.5 4.5-10 10-10h50.5c5.5 0 10 4.5 10 10v23.9c0 5.5-4.5 10-10 10z" />
+            </g>
+        </svg>
+        <div class='title'> Масса карналита </div>
+        <div class='value'> {{masses[i]}} </div>
+        <div class='mass-line green'> </div>
+    </div>
+</div>

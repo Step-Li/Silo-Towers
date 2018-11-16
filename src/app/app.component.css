@@ -1,0 +1,29 @@
+.mass-line {
+	width: 68px;
+	height: 3px;
+	margin-bottom: 10px;
+}
+.title {
+	font-size: 14px;
+	color: white;
+	font-family:'Roboto';	
+	margin-top: 10px;
+	text-align: center;
+}
+.value {
+	font-size: 26px;
+	color: white;
+	font-family:'Roboto';
+	margin-top: 10px;
+}
+.tower {
+	width: 155px;
+}
+
+.green {
+	background-color: #21b149; 
+}
+
+.red {
+	background-color: red; 
+}

@@ -15,7 +15,7 @@ export class InMemoryDataService implements InMemoryDbService {
 	            title: `Уровень карналита в силосной башне №${i}`,
 	            value: Math.round(Math.random() * 1500 + 500),
 	            minValue: Math.round(min),
-	            maxValue: Math.round(min + Math.random()) * 1000 + 500
+	            maxValue: Math.round(min + Math.random() * 1000 + 500)
 	        });
     	}
 		return { indicators };

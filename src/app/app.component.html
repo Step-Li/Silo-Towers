@@ -1,5 +1,6 @@
-<div class='container' fxLayout="row" fxLayoutAlign="space-around center">
-    <div class='tower' *ngFor="let item of items; let i = index" fxLayout="column" fxLayoutAlign="space-around center">
+<div class='container' fxLayout="row wrap" fxLayoutAlign="space-around center" fxLayout.lt-sm="column">
+    <div class='tower' *ngFor="let item of items; let i = index" fxLayout="column" 
+    fxLayoutAlign="space-around center" >
         <div class='title'> {{item.title}} </div>
         <div class='value'> {{(item.value < 0) ? 0 : item.value}}% </div>
         <div [class]='(item.value > 0 && item.value <= 100) ? "mass-line green" : "mass-line red"'> </div>
